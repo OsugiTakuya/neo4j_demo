@@ -6,7 +6,7 @@ services:
     volumes:
       - ./jupyter/notebooks:/home/jovyan/work
     ports:
-      - "8080:8888"
+      - "58888:8888"
   neo4j:
     image: neo4j
     restart: always
@@ -16,4 +16,4 @@ services:
     expose:
       - 7687
     volumes:
-      - ./data:/data
+      - ./neo4j:/data
